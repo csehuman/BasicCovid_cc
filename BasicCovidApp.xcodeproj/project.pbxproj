@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		807C0D95813810E295662CFA /* Pods_BasicCovidApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E811F9023BE748854B6D751 /* Pods_BasicCovidApp.framework */; };
 		DA438DDE28DB07BA00830E2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA438DDD28DB07BA00830E2D /* AppDelegate.swift */; };
 		DA438DE028DB07BA00830E2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA438DDF28DB07BA00830E2D /* SceneDelegate.swift */; };
 		DA438DE228DB07BA00830E2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA438DE128DB07BA00830E2D /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E811F9023BE748854B6D751 /* Pods_BasicCovidApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicCovidApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA438DDA28DB07BA00830E2D /* BasicCovidApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicCovidApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA438DDD28DB07BA00830E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA438DDF28DB07BA00830E2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		DA438DE628DB07BB00830E2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA438DE928DB07BB00830E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA438DEB28DB07BB00830E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5D77F0AF34BB7108BB93EB1 /* Pods-BasicCovidApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicCovidApp.debug.xcconfig"; path = "Target Support Files/Pods-BasicCovidApp/Pods-BasicCovidApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F69E07D35231DE612383417A /* Pods-BasicCovidApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicCovidApp.release.xcconfig"; path = "Target Support Files/Pods-BasicCovidApp/Pods-BasicCovidApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				807C0D95813810E295662CFA /* Pods_BasicCovidApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD0D8FB4B79E5D6C6C34E2A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5D77F0AF34BB7108BB93EB1 /* Pods-BasicCovidApp.debug.xcconfig */,
+				F69E07D35231DE612383417A /* Pods-BasicCovidApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D3F9B530E6978857C4C797C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E811F9023BE748854B6D751 /* Pods_BasicCovidApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA438DD128DB07BA00830E2D = {
 			isa = PBXGroup;
 			children = (
 				DA438DDC28DB07BA00830E2D /* BasicCovidApp */,
 				DA438DDB28DB07BA00830E2D /* Products */,
+				BD0D8FB4B79E5D6C6C34E2A0 /* Pods */,
+				D3F9B530E6978857C4C797C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA438DEE28DB07BB00830E2D /* Build configuration list for PBXNativeTarget "BasicCovidApp" */;
 			buildPhases = (
+				807C0C099C69A34A41650FBF /* [CP] Check Pods Manifest.lock */,
 				DA438DD628DB07BA00830E2D /* Sources */,
 				DA438DD728DB07BA00830E2D /* Frameworks */,
 				DA438DD828DB07BA00830E2D /* Resources */,
+				0A57AD73446C4D09F4802DBA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A57AD73446C4D09F4802DBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicCovidApp/Pods-BasicCovidApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicCovidApp/Pods-BasicCovidApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicCovidApp/Pods-BasicCovidApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		807C0C099C69A34A41650FBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BasicCovidApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA438DD628DB07BA00830E2D /* Sources */ = {
@@ -282,6 +350,7 @@
 		};
 		DA438DEF28DB07BB00830E2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5D77F0AF34BB7108BB93EB1 /* Pods-BasicCovidApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +364,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,12 +374,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DA438DF028DB07BB00830E2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F69E07D35231DE612383417A /* Pods-BasicCovidApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +394,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +404,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
