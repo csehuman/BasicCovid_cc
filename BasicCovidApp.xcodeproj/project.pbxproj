@@ -14,6 +14,7 @@
 		DA438DE528DB07BA00830E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA438DE328DB07BA00830E2D /* Main.storyboard */; };
 		DA438DE728DB07BB00830E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA438DE628DB07BB00830E2D /* Assets.xcassets */; };
 		DA438DEA28DB07BB00830E2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA438DE828DB07BB00830E2D /* LaunchScreen.storyboard */; };
+		DA438DF228DB0CF200830E2D /* CovidOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA438DF128DB0CF200830E2D /* CovidOverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DA438DE628DB07BB00830E2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA438DE928DB07BB00830E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA438DEB28DB07BB00830E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA438DF128DB0CF200830E2D /* CovidOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidOverViewController.swift; sourceTree = "<group>"; };
 		F5D77F0AF34BB7108BB93EB1 /* Pods-BasicCovidApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicCovidApp.debug.xcconfig"; path = "Target Support Files/Pods-BasicCovidApp/Pods-BasicCovidApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F69E07D35231DE612383417A /* Pods-BasicCovidApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicCovidApp.release.xcconfig"; path = "Target Support Files/Pods-BasicCovidApp/Pods-BasicCovidApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +89,7 @@
 				DA438DE628DB07BB00830E2D /* Assets.xcassets */,
 				DA438DE828DB07BB00830E2D /* LaunchScreen.storyboard */,
 				DA438DEB28DB07BB00830E2D /* Info.plist */,
+				DA438DF128DB0CF200830E2D /* CovidOverViewController.swift */,
 			);
 			path = BasicCovidApp;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA438DF228DB0CF200830E2D /* CovidOverViewController.swift in Sources */,
 				DA438DE228DB07BA00830E2D /* ViewController.swift in Sources */,
 				DA438DDE28DB07BA00830E2D /* AppDelegate.swift in Sources */,
 				DA438DE028DB07BA00830E2D /* SceneDelegate.swift in Sources */,

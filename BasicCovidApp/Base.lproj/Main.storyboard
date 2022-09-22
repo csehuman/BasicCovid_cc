@@ -73,15 +73,21 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cpe-nC-mjU" secondAttribute="bottom" constant="24" id="zkg-fw-Ljv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="newCaseLabel" destination="bNA-P7-XZX" id="d9F-Xl-k8Y"/>
+                        <outlet property="pieChartView" destination="Cpe-nC-mjU" id="Gjb-UH-QqK"/>
+                        <outlet property="stackView" destination="bpt-nK-U3e" id="JL7-vr-Dn1"/>
+                        <outlet property="totalCaseLabel" destination="9bI-nS-de8" id="Ow8-1e-oYd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Covid Over View Controller-->
         <scene sceneID="Z5f-TW-HVh">
             <objects>
-                <tableViewController id="QPl-U8-f0P" sceneMemberID="viewController">
+                <tableViewController id="QPl-U8-f0P" customClass="CovidOverViewController" customModule="BasicCovidApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ygD-To-NFb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -265,6 +271,15 @@
                             <outlet property="delegate" destination="QPl-U8-f0P" id="1df-SD-TbA"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="deathCell" destination="zf6-Jq-53m" id="7Jk-0Y-bK1"/>
+                        <outlet property="newCaseCell" destination="yLG-Vs-yhk" id="G9A-t8-By6"/>
+                        <outlet property="overseasInflowCell" destination="gh7-F0-qJ8" id="9bS-Et-qvN"/>
+                        <outlet property="percentageCell" destination="OYY-Hf-AEM" id="at0-md-e9o"/>
+                        <outlet property="recoveredCell" destination="EVa-xQ-e4Q" id="hBR-Jp-HPs"/>
+                        <outlet property="regionalOutbreakCell" destination="Y4D-2a-P20" id="KDJ-SN-GsZ"/>
+                        <outlet property="totalCaseCell" destination="F7X-qe-Ng5" id="9Ci-Rd-TGe"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jUb-fn-tfn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
