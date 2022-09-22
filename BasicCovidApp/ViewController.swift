@@ -31,6 +31,8 @@ class ViewController: UIViewController {
     }
     
     func configuePieChartView(cityCovidOverview: CityCovidOverview) {
+        pieChartView.delegate = self
+        
         let covideOverviewList = makeCovidOverViewList(cityCovidOverview: cityCovidOverview)
         let entries = covideOverviewList.compactMap { [weak self] covidOverview -> PieChartDataEntry? in
             guard let self = self else { return nil }
@@ -52,8 +54,8 @@ class ViewController: UIViewController {
     }
     
     func configureStackView(overview: CovidOverview) {
-        totalCaseLabel.text = overview.totalCase
-        newCaseLabel.text =  overview.newCase
+        totalCaseLabel.text = "\(overview.totalCase)명"
+        newCaseLabel.text =  "\(overview.newCase)명"
     }
     
     func stringToNumber(string: String) -> Double {
@@ -106,3 +108,11 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: ChartViewDelegate {
+    func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
+        guard let covidOverviewVC = storyboard?.instantiateViewController(withIdentifier: "CovidOverViewController") as? CovidOverViewController else { return }
+        guard let covidOverview = entry.data as? CovidOverview else { return }
+        covidOverviewVC.covidOverview = covidOverview
+        navigationController?.pushViewController(covidOverviewVC, animated: true)
+    }
+}
