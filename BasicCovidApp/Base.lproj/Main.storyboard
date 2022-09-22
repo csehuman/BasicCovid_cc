@@ -76,11 +76,16 @@
                                 <rect key="frame" x="24" y="187" width="366" height="651"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="8kz-1K-qhP">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Cpe-nC-mjU" firstAttribute="top" secondItem="bpt-nK-U3e" secondAttribute="bottom" constant="24" id="0w5-vF-JCF"/>
+                            <constraint firstItem="8kz-1K-qhP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BCw-eB-QeF"/>
+                            <constraint firstItem="8kz-1K-qhP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="I3d-Vc-Ltb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cpe-nC-mjU" secondAttribute="trailing" constant="24" id="Kwm-ga-HYS"/>
                             <constraint firstItem="Cpe-nC-mjU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="RTs-kC-ntD"/>
                             <constraint firstItem="bpt-nK-U3e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="Wlu-eB-SIj"/>
@@ -91,6 +96,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="GvB-7t-eKD"/>
                     <connections>
+                        <outlet property="loadingIndicator" destination="8kz-1K-qhP" id="csf-td-tzb"/>
                         <outlet property="newCaseLabel" destination="bNA-P7-XZX" id="d9F-Xl-k8Y"/>
                         <outlet property="pieChartView" destination="Cpe-nC-mjU" id="Gjb-UH-QqK"/>
                         <outlet property="stackView" destination="bpt-nK-U3e" id="JL7-vr-Dn1"/>

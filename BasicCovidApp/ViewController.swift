@@ -15,15 +15,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var pieChartView: PieChartView!
     @IBOutlet weak var totalCaseLabel: UILabel!
     @IBOutlet weak var newCaseLabel: UILabel!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadingIndicator.startAnimating()
+        stackView.alpha = 0.0
+        pieChartView.alpha = 0.0
         
         fetchCityCovidOverview { result in
             switch result {
             case .success(let result):
                 self.configureStackView(overview: result.korea)
                 self.configuePieChartView(cityCovidOverview: result)
+                self.loadingIndicator.stopAnimating()
+                self.loadingIndicator.alpha = 0.0
+                self.stackView.alpha = 1.0
+                self.pieChartView.alpha = 1.0
             case .failure(let error):
                 print(error.localizedDescription)
             }
